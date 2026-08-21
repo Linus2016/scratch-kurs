@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Scratch Kurs</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6c5ce7, #00cec9);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .emoji {
+            font-size: 70px;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #ff9f43;
+            margin: 10px 0;
+        }
+
+        h1 {
+            color: #6c5ce7;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .lesson {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 25px 0;
+        }
+
+        .info {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .join-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 18px 40px;
+            background: #00b894;
+            color: white;
+            text-decoration: none;
+            font-size: 23px;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 7px 0 #008f72;
+            transition: 0.2s;
+        }
+
+        .join-button:hover {
+            transform: translateY(4px);
+            box-shadow: 0 3px 0 #008f72;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="emoji">🚀</div>
+
+            <h2>🎮 Scratch Kurs</h2>
+
+            <h1>Nächste Lektion</h1>
+
+            <div class="lesson">
+                📘 Lektion {{ lektion }}
+            </div>
+
+            <div class="info">
+                🕒 Mittwoch · 15:00–15:45 Uhr
+            </div>
+
+            <div class="info">
+                👤 Trainer: <strong>Linus</strong>
+            </div>
+
+            <a
+                class="join-button"
+                href="https://meet.google.com/ono-wick-ijh"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                🟢 Beitreten
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
